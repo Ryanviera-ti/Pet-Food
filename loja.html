@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <script src="https://kit.fontawesome.com/ef2c46f17f.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="loja.css" />
+  <link rel="stylesheet" href="./mobile.css">
+  <title>Loja Pet</title>
+</head>
+
+<body>
+  <header>
+    <div class="container">
+      <div class="logo">
+        <a href=""><img src="./img/logo.svg" alt="" /></a>
+      </div>
+      <div class="menu">
+        <div class="menu-desktop">
+          <nav>
+            <ul>
+              <li><a href="./index.html">Início</a></li>
+              <li><a href="./index.html">Sobre</a></li>
+              <li><a href="./loja.html">Loja</a></li>
+              <li><a href="#footer">Contatos</a></li>
+        </div>
+        <div class="menuImg-mobile">
+          <button><img src="./img/802013052_univ_cnt_2_md-removebg-preview.png" alt=""></button>
+        </div>
+        <aside>
+        <li class="cart-container--area">
+          <a href=""><i class="fa-solid fa-cart-shopping"></i> </a>
+          <div class="cart-modal closed">
+            <template id="template-cart">
+              <div class="cart-product">
+                <div class="cart-product--image">
+                  <img class="cart-image" src="" alt="" />
+                </div>
+                <div class="cart-product--desc">
+                  <div class="cart-product--text">
+                    <p class="products-cart--brand"></p>
+                    <h5 class="products-cart--name"></h5>
+                    <h3 class="products-cart--price"></h3>
+                  </div>
+                  <div class="cart--qtarea">
+                    <button class="cart--qtmenos">-</button>
+                    <div class="cart--qt">1</div>
+                    <button class="cart--qtmais">+</button>
+                  </div>
+                </div>
+              </div>
+            </template>
+
+            <div class="cart-container">
+              <div class="cart--area">
+                <div class="cart-product-area"></div>
+                <div class="cart-info">
+                  <div class="cart-info--total">
+                    <p class="cart-total">Total</p>
+                    <p class="cart-info--price">R$ 0</p>
+                  </div>
+                  <h4 class="cart-info--freight"></h4>
+                  <a href="#" class="cart-info--button">Finalizar Compra</a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </li>
+      </aside>
+        </ul>
+        </nav>
+
+      </div>
+    </div>
+  </header>
+
+  <div class="menuMobile closed">
+    <nav>
+    <ul class="menu-mobile--area container">
+      <li class="menu-mobile--item"><a href="./index.html">Inicio</a></li>
+      <li class="menu-mobile--item"><a href="./index.html">Sobre</a></li>
+      <li class="menu-mobile--item"><a href="./loja.html">Loja</a></li>
+      <li class="menu-mobile--item"><a href="#footer">Contatos</a></li>
+    </ul>
+  </nav>
+  </div>
+  <section id="banner">
+    <div class="container column">
+      <div class="banner-container">
+        <div class="banner-content">
+          <h1>Tudo o que seu pet precisa a PetFood tem!</h1>
+          <p>
+            Seja para comprar um petisco ou uma roupinha estilosa... basta
+            você selecionar o produto, escolher como deseja pagar e pronto!
+          </p>
+          <a href="./loja.html">CONFERIR PRODUTOS</a>
+        </div>
+
+        <div class="banner-puppy">
+          <img src="./img/Cachorro.png" alt="" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <main>
+    <div class="recomended">
+      <h2 class="container">Produtos recomendados</h2>
+      <div class="products-area container"></div>
+    </div>
+  </main>
+
+  <section class="store">
+    <div class="store-products">
+      <div class="products-card">
+        <a href="" class="link">
+          <div class="products-image"><img src="" /></div>
+          <p class="products-brand">--</p>
+          <h5 class="products-name">--</h5>
+          <h4 class="products-price">R$ --</h4>
+        </a>
+      </div>
+    </div>
+  </section>
+  <div class="productsWindowArea">
+    <div class="productsWindowBody">
+      <div class="productsBig">
+        <img src="" />
+      </div>
+      <div class="productsInfo">
+        <h1>--</h1>
+        <p></p>
+        <div class="productsInfo--sizearea">
+          <div class="productsInfo--sector">Tamanho</div>
+          <div class="productsInfo--sizes">
+            <div data-key="0" class="productsInfo--size">
+              <p></p>
+            </div>
+            <div data-key="1" class="productsInfo--size">
+              <p></p>
+            </div>
+            <div data-key="2" class="productsInfo--size selected">
+              <p></p>
+            </div>
+          </div>
+        </div>
+        <div class="productsInfo--pricearea">
+          <div class="productsInfo--sector">Preço</div>
+          <div class="productsInfo--price">
+            <div class="productsInfo--actualPrice">R$ --</div>
+            <div class="productsInfo--qtarea">
+              <button class="productsInfo--qtmenos">-</button>
+              <div class="productsInfo--qt"></div>
+              <button class="productsInfo--qtmais">+</button>
+            </div>
+          </div>
+        </div>
+        <div class="productsInfo--addButton">
+          <h3>Adicionar ao carrinho</h3>
+        </div>
+        <div class="productsInfo--cancelButton">
+          <h3>Cancelar</h3>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="footer">
+    <div class="logo-footer">
+      <a href=""><img src="./img/logo.svg" alt="" /></a>
+    </div>
+    <div class="contacts container">
+      <address class="address-contacts">
+        <img src="./img/map.svg" alt="" />
+        <div class="area-textContacts">
+          <span>Avenida paulista, 1400 São paulo - SP</span>
+        </div>
+      </address>
+      <address class="address-contacts">
+        <img src="./img/phone.svg" alt="" />
+        <div class="area-textContacts">
+          <span>Whatsapp: 11 9999-9999</span>
+          <span>Telefone: 11 9992-9992</span>
+        </div>
+      </address>
+      <address  class="address-contacts">
+        <img src="/img/clock.svg" alt="" />
+        <div class="area-textContacts">
+          <span>Segunda - Sexta: 7h - 20h Sábado - Domingo: 10h - 19h</span>
+        </div>
+      </address>
+    </div>
+    <div class="credits column">
+      <span>
+        Design desenvolvido por
+        <a href="https://davidaugusto.tech/">David Augusto</a>
+      </span>
+      <span>
+        Sistema desenvolvido por
+        <a href="www.linkedin.com/in/Ryan-Front">Ryan Vieira</a>
+      </span>
+    </div>
+
+    <br />
+  </footer>
+  <script src="loja.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
